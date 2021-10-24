@@ -1,4 +1,3 @@
-from Assets.python.dev import replitMode
 from Assets.python.proxy import proxies
 from Assets.python.merge import merge
 from Assets.python.commit import commit
@@ -118,6 +117,12 @@ def RemoveMode1(): # Removes files so they can be Re-written
 
     if os.path.exists("Main.m3u"):
         os.remove("Main.m3u")
+
+    if os.path.exists("Beta/English.m3u"):
+        os.remove("Beta/English.m3u")
+
+    if os.path.exists("Beta/Main.m3u"):
+        os.remove("Beta/Main.m3u")
 
     if os.path.exists("Assets/Channels/US/ustvgo.m3u"):
         os.remove("Assets/Channels/US/ustvgo.m3u")
