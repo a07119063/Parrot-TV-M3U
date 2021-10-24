@@ -1,4 +1,4 @@
-from make import Clear, getUSTVGO, MakeCS, MakeEng, MakeMain, Git, remPYC, RemoveMode1, MakeMainBeta, MakeEngBeta
+from main import Clear, getUSTVGO, MakeCS, MakeEng, MakeMain, Git, remPYC, RemoveMode1, MakeMainBeta, MakeEngBeta
 from Assets.python.replace import replace
 #from keep_alive import keep_alive
 from Assets.python.dev import replitMode
@@ -38,7 +38,6 @@ int(timeoutTime)
 
 msg = "Timeout time is: " + str(timeoutTime)
 
-echo(msg)
 
 def Main():
     RemoveMode1()
@@ -56,5 +55,6 @@ def Main():
     
 #if replitMode == True:
     #keep_alive()
-
+if __name__ == "__main__":
+    Main()
 

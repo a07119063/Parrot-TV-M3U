@@ -15,26 +15,16 @@ try:
     email = str(Email)
     name = str(name)
     repo = str(gitRepo)
-    if not repo == "False":
-        origin = "sudo git remote set-url origin https://github:" + str(token) + str(repo) # Gets token and repo from Auth/auth.py
-        config_mail = "sudo git config --global user.email " + email
-        config_name = "sudo git config --global user.name " + name
 except ModuleNotFoundError:
     token = str(os.environ['gitToken'])
     email = str(os.environ['Email'])
     name = str(os.environ['name'])
     repo = str(os.environ['gitRepo'])
-    if not repo == "False":
-        origin = "git remote set-url origin https://github:" + str(token) + str(repo) # Gets token and repo from Auth/auth.py
-        config_mail = "git config --global user.email " + email
-        config_name = "git config --global user.name " + name
 
-proxy_mode = ""
 
-if open('Assets/Dev/Proxy.txt', 'r').read() == "True":
-    proxy_mode = True
-else:
-    proxy_mode = False
+origin = "git remote set-url origin https://github:" + str(token) + str(repo) # Gets token and repo from Auth/auth.py
+config_mail = "git config --global user.email " + email
+config_name = "git config --global user.name " + name
 
 def done(happ):
     now = datetime.now(tz)
@@ -83,10 +73,7 @@ def getUSTVGO(): # Gets USTVGO.tv Channels
 
     def grab(name, code, logo):
         data = {'stream': code}
-        if proxy_mode == True:
-            m3u = s.post('https://ustvgo.tv/data.php', data=data, proxies=proxies).text
-        else:
-            m3u = s.post('https://ustvgo.tv/data.php', data=data).text
+        m3u = s.post('https://ustvgo.tv/data.php', data=data).text
         playlist.write(f'\n#EXTINF:-1 tvg-id="{code}" group-title="US Channels" tvg-logo="{logo}",USTVGO: US: {name}')
         playlist.write(f'\n{m3u}')
 
@@ -118,11 +105,10 @@ def getUSTVGO(): # Gets USTVGO.tv Channels
                 pbar.update(1)
                 grab(name, code, logo)
             pbar.close()
-            print('\n[SUCCESS] Playlist is generated!\n')
+            now = datetime.now(tz)
+            time = now.strftime("%H:%M:%S")
+            print('\n[' + time + '][SUCCESS] Playlist is generated!\n')
 
-
-
-           
 def RemoveMode1(): # Removes files so they can be Re-written
     if os.path.exists("Czechoslovakia.m3u"):
         os.remove("Czechoslovakia.m3u")
@@ -138,7 +124,6 @@ def RemoveMode1(): # Removes files so they can be Re-written
 
     if os.path.exists("Assets/USTVGOreplace/data.txt"):
         os.remove("Assets/USTVGOreplace/data.txt")
-
 
 
 def MakeCS(): # Makes CZ & SK Channels 
@@ -499,16 +484,10 @@ def Git(): # Commits to GitHub Repo
     os.system(config_mail)
     os.system(config_name)
     os.system(origin)
-    if replitMode == False:
-        os.system("sudo git add .")
-        os.system(commit)
-        os.system("sudo git push")
-    elif replitMode == True:
-        os.system("git add .")
-        os.system(commit)
-        os.system("git push")
+    os.system("git add .")
+    os.system(commit)
+    os.system("git push")
 
-    
 def Mode1():
     m = "not"
     RemoveMode1()
@@ -520,44 +499,28 @@ def Mode1():
     MakeMain()
     MakeMainBeta()
     MakeEngBeta()
-    if gitToken == "False" and gitRepo == "False":
-        Git()
+    Git()
     remPYC()
     done(m)
 
 
 def Main():
     def select():
-        if replitMode == False:
-            Clear()
-            print("###############################################")
-            print("#          1.) Without EPG                    #")
-            print("###############################################")
+        Clear()
+        print("###############################################")
+        print("#          1.) Without EPG                    #")
+        print("###############################################")
+        Mode1() # Remove Later
+        modeST = input("Select Mode: ")
 
-            modeST = input("Select Mode: ")
-
-            if modeST == str(1):
-                Mode1()
-            elif modeST == str(5):
-              os.system("python3 service.py")
-            else:
-                select()
-        elif replitMode == True:
+        if modeST == str(1):
+            Mode1()
+        elif modeST == str(5):
             os.system("python3 service.py")
-
-    admin = os.getuid()
-
-    if admin == 1000:
-        if replitMode == False:
-            os.system("clear")
-            print("Superuser UwU: ")
-            os.system("sudo python3 make.py")
-        elif replitMode == True:
+        else:
             select()
 
-    elif admin == 0:
-        select()
+    select()
 
 if __name__ == "__main__":
     Main()
-
