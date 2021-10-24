@@ -1,0 +1,14 @@
+Auth/
+Auth/*
+Auth/auth.py
+__pycache__
+cogs/__pycache__
+Assets/__pycache__
+Assets/python/__pycache__
+Assets/Auth/
+Assets/Auth/*
+.env
+Assets/Auth/auth.py
+.~lock.bot.sh#
+poetry.lock
+pyproject.toml
