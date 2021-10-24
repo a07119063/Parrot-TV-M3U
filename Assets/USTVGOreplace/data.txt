@@ -177,3 +177,13 @@ https://h2.ustvgo.la/TVLand/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9M
 https://h2.ustvgo.la/TWC/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIwIEFNJmhhc2hfdmFsdWU9b0ZONlUxQ2Y2RS85WWp2aEl2Q3B0Zz09JnZhbGlkbWludXRlcz0yNDA=
 #EXTINF:-1 tvg-id="Univision" group-title="US Channels" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/cd/Univision_logo.png",USTVGO: US: Univision
 https://h2.ustvgo.la/Univision/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIwIEFNJmhhc2hfdmFsdWU9b0ZONlUxQ2Y2RS85WWp2aEl2Q3B0Zz09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="USANetwork" group-title="US Channels" tvg-logo="https://i.pinimg.com/originals/3a/6e/f2/3a6ef23a9908ceb32469f8ad2c2ba44f.jpg",USTVGO: US: USA Network
+https://h2.ustvgo.la/USANetwork/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="VH1" group-title="US Channels" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/VH1_logonew.svg/1200px-VH1_logonew.svg.png",USTVGO: US: VH1
+https://h2.ustvgo.la/VH1/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="WETV" group-title="US Channels" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/We_TV_logo_2014.svg/1200px-We_TV_logo_2014.svg.png",USTVGO: US: We TV
+https://h2.ustvgo.la/WETV/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="WWE" group-title="US Channels" tvg-logo="https://www.denofgeek.com/wp-content/uploads/2014/01/wwenetworklogo.png",USTVGO: US: WWE Network
+https://h2.ustvgo.la/WWE/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIyIEFNJmhhc2hfdmFsdWU9NzAxUEsvTUFSVmw5WWJXd0R1NEk1UT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="YES" group-title="US Channels" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/YES_Network_logo.svg/1024px-YES_Network_logo.svg.png",USTVGO: US: YES Network
+https://h2.ustvgo.la/YES/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIyIEFNJmhhc2hfdmFsdWU9NzAxUEsvTUFSVmw5WWJXd0R1NEk1UT09JnZhbGlkbWludXRlcz0yNDA=

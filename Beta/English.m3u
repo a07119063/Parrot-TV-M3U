@@ -2381,6 +2381,16 @@ https://h2.ustvgo.la/TVLand/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9M
 https://h2.ustvgo.la/TWC/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIwIEFNJmhhc2hfdmFsdWU9b0ZONlUxQ2Y2RS85WWp2aEl2Q3B0Zz09JnZhbGlkbWludXRlcz0yNDA=
 #EXTINF:-1 tvg-id="UnivisionEast.us" group-title="US Channels" tvg-logo="https://i.ibb.co/vY95Hnw/Univision.png",USTVGO: US: Univision
 https://h2.ustvgo.la/Univision/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIwIEFNJmhhc2hfdmFsdWU9b0ZONlUxQ2Y2RS85WWp2aEl2Q3B0Zz09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="USANetworkEast.us" group-title="US Channels" tvg-logo="https://i.ibb.co/cQjFNKS/USA-Network.png",USTVGO: US: USA Network
+https://h2.ustvgo.la/USANetwork/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="VH1East.us" group-title="US Channels" tvg-logo="https://i.ibb.co/nQD03Lg/VH1.png",USTVGO: US: VH1
+https://h2.ustvgo.la/VH1/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="NotFound" group-title="US Channels" tvg-logo="https://i.ibb.co/bLsdX5K/WeTV.png",USTVGO: US: We TV
+https://h2.ustvgo.la/WETV/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIxIEFNJmhhc2hfdmFsdWU9V2R0azVBb2tyMlJnZ1NwTS84VjFrUT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="WWENetwork.us" group-title="US Channels" tvg-logo="https://i.ibb.co/rFjG3dw/WWE-Network.png",USTVGO: US: WWE Network
+https://h2.ustvgo.la/WWE/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIyIEFNJmhhc2hfdmFsdWU9NzAxUEsvTUFSVmw5WWJXd0R1NEk1UT09JnZhbGlkbWludXRlcz0yNDA=
+#EXTINF:-1 tvg-id="YESNetwork.us" group-title="US Channels" tvg-logo="https://i.ibb.co/9q0cRNm/yesTV.png",USTVGO: US: YES Network
+https://h2.ustvgo.la/YES/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTAvMjQvMjAyMSA4OjU1OjIyIEFNJmhhc2hfdmFsdWU9NzAxUEsvTUFSVmw5WWJXd0R1NEk1UT09JnZhbGlkbWludXRlcz0yNDA=
 
 
 
