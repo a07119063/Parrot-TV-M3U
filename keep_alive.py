@@ -6,6 +6,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
+  Main()
   return "401 Unauthorized"
   
 @app.route('/update/')

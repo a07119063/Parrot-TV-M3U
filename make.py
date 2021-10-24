@@ -84,7 +84,7 @@ def getUSTVGO(): # Gets USTVGO.tv Channels
     def grab(name, code, logo):
         data = {'stream': code}
         if proxy_mode == True:
-            m3u = s.post('https://ustvgo.tv/data.php', data=data, proxies=proxies).text
+            m3u = s.post('https://ustvgo.tv/data.php', data=data).text
         else:
             m3u = s.post('https://ustvgo.tv/data.php', data=data).text
         playlist.write(f'\n#EXTINF:-1 tvg-id="{code}" group-title="US Channels" tvg-logo="{logo}",USTVGO: US: {name}')
@@ -132,6 +132,12 @@ def RemoveMode1(): # Removes files so they can be Re-written
 
     if os.path.exists("Main.m3u"):
         os.remove("Main.m3u")
+
+    if os.path.exists("Beta/English.m3u"):
+        os.remove("Beta/English.m3u")
+
+    if os.path.exists("Beta/Main.m3u"):
+        os.remove("Beta/Main.m3u")
 
     if os.path.exists("Assets/Channels/US/ustvgo.m3u"):
         os.remove("Assets/Channels/US/ustvgo.m3u")
