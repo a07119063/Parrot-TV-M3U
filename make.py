@@ -214,7 +214,7 @@ def MakeCS(): # Makes CZ & SK Channels
     data += "\n"
 
   
-    with open ('Czechoslovakia.m3u', 'w') as fp:
+    with open ('M3U/Czechoslovakia.m3u', 'w') as fp:
         fp.write(data)
 
 def MakeEng(): # Makes English Only Channels
