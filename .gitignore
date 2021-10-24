@@ -1,9 +1,6 @@
 Auth/
 Auth/*
 Auth/auth.py
-.git
-.git/
-discord.sh
 __pycache__
 cogs/__pycache__
 Assets/__pycache__
@@ -13,7 +10,5 @@ Assets/Auth/*
 .env
 Assets/Auth/auth.py
 .~lock.bot.sh#
-memes/meme-folder/*
 poetry.lock
 pyproject.toml
-.replit
