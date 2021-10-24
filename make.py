@@ -354,7 +354,7 @@ def MakeMain(): # Makes Main Channels
     data += "\n"
 
   
-    with open ('Main.m3u', 'w') as fp:
+    with open ('M3U/Main.m3u', 'w') as fp:
         fp.write(data)
 
 def MakeEngBeta(): # Makes English Only Channels
